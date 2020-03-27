@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css?family=Sulphur+Point:400,700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #3fe9c4;
+  color: #222;
+  font-family: "Sulphur Point", sans-serif;
+  font-weight: 400;
+  font-size: 62.5%;
+  line-height: 1.7;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  text-align: inherit;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.box {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#video {
+  background-color: #2e2e2e;
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  cursor: pointer;
+}
+
+.controls {
+  margin-top: -2px;
+  background: rgba(255, 255, 255, 0.671);
+  color: #fff;
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.controls span {
+  font-size: 2rem;
+  font-weight: bolder;
+  padding: 0 1rem;
+  color: #222;
+}
+
+.controls button {
+  cursor: pointer;
+  margin: 0 1rem;
+}
+
+.controls i {
+  font-size: 2rem;
+}
+
+.controls .progress {
+  width: 100%;
+}
+
+.controls .fa-play {
+  color: #60be92;
+}
+
+.controls .fa-stop {
+  color: #ff4343;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.volume-control {
+  position: absolute;
+  color: #fff;
+  top: 0;
+  left: 0;
+  font-size: 3rem;
+  margin: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.volume-control i {
+  cursor: pointer;
+}
+
+.volume-control input {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transform: translate(-4.7rem, 7rem) rotate(90deg) scale(0);
+          transform: translate(-4.7rem, 7rem) rotate(90deg) scale(0);
+}
+
+.volume-control:hover input {
+  -webkit-transform: translate(-4.7rem, 7rem) rotate(90deg) scale(1);
+          transform: translate(-4.7rem, 7rem) rotate(90deg) scale(1);
+}
+
+@media only screen and (max-width: 715px) {
+  .box {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
